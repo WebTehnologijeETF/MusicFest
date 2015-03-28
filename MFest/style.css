@@ -16,6 +16,8 @@ h1, h2, h3
 {
 	margin: 0px;
 	padding: 0px;
+	font-family: 'Patrick Hand SC', cursive;
+	text-align: center;
 }
 
 p{
@@ -23,35 +25,40 @@ p{
 	margin-right: 1em;
 }
 
-.nav{
+a{
+	text-decoration: none;
+	font-family: 'Patrick Hand SC', cursive;
+	color: #BF7047;
+}
+
+
+#nav{
 	text-align: center;
 	background : rgba(0,0,0,0.4);
 	height: 7em;
 }
 
-.nav ul{
+#nav ul{
 	position:relative;
 	top: 1.5em;
 }
 
-.nav li{
+#nav li{
 	display:inline;
 	padding-left: 2em;
 }
 
-.nav a {
-	font-family: 'Patrick Hand SC', cursive;
-	text-decoration: none;
+#nav a {
+
 	font-size: 40px;
-	color: #BF7047;
 	transition: all 0.35s ease 0s;
 }
 
-.nav a:hover{
+#nav a:hover{
 	color: #A44952;
 }
 
-.banner{
+#banner{
 	background-image: url(../MFest/images/glass2.jpg);
 	background-size: 100%;
 	height: 500px;
@@ -66,19 +73,13 @@ p{
 }
 
 .logotext h1{
-	font-family: 'Patrick Hand SC', cursive;
 	font-size: 50px;
 	color: #BF7047;
-	text-align: center;
-	margin: 0px;
 }
 
 .logotext h2{
-	font-family: 'Patrick Hand SC', cursive;
 	font-size: 30px;
 	color: #BF7047;
-	text-align: center;
-	margin:0px;
 }
 
 .wrapper{
@@ -91,6 +92,15 @@ p{
 	padding-bottom: 5em;
 	border-bottom: 1px solid rgba(0,0,0,0.2);
 	text-align: center;
+}
+
+.container ul{
+	list-style-image: url('../MFest/images/bullet.gif');
+	padding-left: 45%;
+}
+
+.container li{
+	text-align: left;
 }
 
 .news1 {
@@ -112,7 +122,6 @@ p{
 .title h2{
 	font-weight: 400;
 	font-size: 3em;
-	font-family: 'Patrick Hand SC', cursive;
 }
 
 .title .by{
@@ -138,7 +147,7 @@ p{
 	background: #A44952;
 }
 
-.footer{
+#footer{
 	background-image: url(../MFest/images/footer.jpg);
 	background-size: 100%;
 	height: 200px;
@@ -147,13 +156,40 @@ p{
 
 img{
 	 max-width: 100%;
-     height: auto;
+	 max-height: 100%;
 }
 
 .slika{
-	width: 350px;
+	max-width: 350px;
 	min-height: 100px;
 	overflow: hidden;
 	margin-left: auto;
     margin-right: auto;
 }
+
+.box{
+	display: inline-block;
+	max-width:220px;
+	max-height:186px;
+	overflow:hidden;
+	padding-right:20px;
+	padding-left:20px;
+	text-align: center;
+}
+
+.box h3{
+	background : rgba(0,0,0,0.4);
+	height: 2em;	
+}
+
+.box a{
+	
+	font-size: 20px;
+	transition: all 0.35s ease 0s;
+	text-transform: uppercase;
+}
+
+.box a:hover{
+	color: #A44952;
+}
+
