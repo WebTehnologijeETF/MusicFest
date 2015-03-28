@@ -1,0 +1,159 @@
+@import url(http://fonts.googleapis.com/css?family=Patrick+Hand+SC);
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400);
+
+body
+{
+	background: #702A60;
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 11pt;
+	font-weight: 300;
+	color: #E6E6E6;
+}
+
+h1, h2, h3
+{
+	margin: 0px;
+	padding: 0px;
+}
+
+p{
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+.nav{
+	text-align: center;
+	background : rgba(0,0,0,0.4);
+	height: 7em;
+}
+
+.nav ul{
+	position:relative;
+	top: 1.5em;
+}
+
+.nav li{
+	display:inline;
+	padding-left: 2em;
+}
+
+.nav a {
+	font-family: 'Patrick Hand SC', cursive;
+	text-decoration: none;
+	font-size: 40px;
+	color: #BF7047;
+	transition: all 0.35s ease 0s;
+}
+
+.nav a:hover{
+	color: #A44952;
+}
+
+.banner{
+	background-image: url(../MFest/images/glass2.jpg);
+	background-size: 100%;
+	height: 500px;
+}
+
+.logo{
+	background-image: url(../MFest/images/logo.png);
+	height: 190px;
+	background-repeat: no-repeat;
+	background-size:contain;
+	background-position: center top;
+}
+
+.logotext h1{
+	font-family: 'Patrick Hand SC', cursive;
+	font-size: 50px;
+	color: #BF7047;
+	text-align: center;
+	margin: 0px;
+}
+
+.logotext h2{
+	font-family: 'Patrick Hand SC', cursive;
+	font-size: 30px;
+	color: #BF7047;
+	text-align: center;
+	margin:0px;
+}
+
+.wrapper{
+	padding-top: 7em;
+}
+
+.container{
+	overflow: hidden;
+	margin-bottom: 5em;
+	padding-bottom: 5em;
+	border-bottom: 1px solid rgba(0,0,0,0.2);
+	text-align: center;
+}
+
+.news1 {
+	float: left;
+	padding-right: 40px;
+	border-right: 1px solid rgba(0,0,0,0.2);
+	width: 45%;
+}
+
+.news2{
+	float: right;
+	width: 45%
+}
+
+.title{
+	margin-bottom: 3em;
+}
+
+.title h2{
+	font-weight: 400;
+	font-size: 3em;
+	font-family: 'Patrick Hand SC', cursive;
+}
+
+.title .by{
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 0.8em;
+	color: #8A8A8A;
+}
+
+.button{
+	padding: 0.3em 1em;
+	background: #BF7047;
+	margin-top: 2em;
+	text-decoration: none;
+	font-family: 'Patrick Hand SC', cursive;
+	font-size: 1.3em;
+	font-weight: bold;
+	transition: all 0.35s ease 0s;
+	color: #702A60;	
+}
+
+.button:hover{
+	background: #A44952;
+}
+
+.footer{
+	background-image: url(../MFest/images/footer.jpg);
+	background-size: 100%;
+	height: 200px;
+}
+
+
+img{
+	 max-width: 100%;
+     height: auto;
+}
+
+.slika{
+	width: 350px;
+	min-height: 100px;
+	overflow: hidden;
+	margin-left: auto;
+    margin-right: auto;
+}
