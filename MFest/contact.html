@@ -41,17 +41,24 @@
 			<fieldset>
 				<legend accesskey=I></legend>
 				Name<br>
-				<input type="text" name="name">
-				<br>E-mail<br>
-				<input type="text" name="email">
-				<br>Subject<br>
+				<input type="text" name="name" onchange="validirajIme(this.form)">
+				<div ID="error1">
+				<img src="../MFest/images/error.png" alt="slika"> Unesite ime i prezime
+				</div>
+				E-mail<br>
+				<input type="text" name="email" onchange="validirajMail(this.form)">
+				<div ID="error2">
+				<img src="../MFest/images/error.png" alt="slika"> E-mail nije u pravilnom formatu
+				</div>
+				Subject<br>
 				<input type="text" name="subject">
 			</fieldset>
 			<fieldset>
 				<legend accesskey=O></legend>
 				Message<br>
-				<textarea name="message" rows=4 cols=20></textarea>
-				<input type="submit" value="Send!">
+				<textarea name="message" rows=4 cols=20 onchange="validirajPoruku(this.form)"></textarea>
+				<br>
+				<input type="submit" value="Send!" onclick="validacija(this.form)">
 			</fieldset>
 		</form>
 	</div>
