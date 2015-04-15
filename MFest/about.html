@@ -10,7 +10,14 @@
 	<div ID="nav">
 	<ul>
 		<li><a href="index.html">Home</a></li>
-		<li><a href="about.html">About us</a></li>
+		<li><a href="#" onclick="show()">About us</a>
+			<div ID="dropdown">
+				<ul>
+				<li onmouseover="boja(this)" onmouseout="stara(this)"><a href="about.html">Info</a></li>
+				<li onmouseover="boja(this)" onmouseout="stara(this)"><a href="">Location</a></li>
+				<li onmouseover="boja(this)" onmouseout="stara(this)"><a href="">Gallery</a></li>
+				</ul>
+			</div></li>
 		<li><a href="lineup.html">Lineup</a></li>
 		<li><a href="tickets.html">Tickets</a></li>
 		<li><a href="contact.html">Contact</a></li>
@@ -72,6 +79,6 @@
 	</div>
 </div>
 
-	
+<script src="skripta.js"></script>		
 </BODY>
 </HTML>

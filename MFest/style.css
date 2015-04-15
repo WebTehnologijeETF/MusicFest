@@ -96,8 +96,8 @@ textarea{
 
 #nav{
 	text-align: center;
-	background : rgba(0,0,0,0.4);
-	height: 7em;
+	background : rgba(0,0,0,0.6);
+	height: 100px;
 }
 
 #nav ul{
@@ -106,18 +106,35 @@ textarea{
 }
 
 #nav li{
-	display:inline;
-	padding-left: 2em;
+	padding-left: 3em;
+	display: inline-block;
+	vertical-align: top;
 }
 
 #nav a {
-
 	font-size: 40px;
 	transition: all 0.35s ease 0s;
 }
 
 #nav a:hover{
 	color: #A44952;
+}
+
+#nav #dropdown{
+	text-align: center;
+	visibility: hidden;
+}
+
+#nav #dropdown ul{
+	background : rgba(0,0,0,0.6);
+	padding: 0px;
+	text-align: center;
+}
+
+#nav #dropdown li{
+	padding-left: 10px;
+	padding-right: 10px;
+	display:block;
 }
 
 #banner{
@@ -136,12 +153,12 @@ textarea{
 
 .logotext h1{
 	font-size: 50px;
-	color: #BF7047;
+	color:  #E6E6E6;
 }
 
 .logotext h2{
 	font-size: 30px;
-	color: #BF7047;
+	color:  #E6E6E6;
 }
 
 .wrapper{
