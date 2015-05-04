@@ -1,38 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<HTML>
-<HEAD>
-<TITLE>Jungle Music Festival</TITLE>
-<link rel="stylesheet" type="text/css" href="style.css">
-<META http-equiv="Content-Type" content="text/html; charset=utf-8">
-</HEAD>
-<BODY>
-<div ID="banner">
-	<div ID="nav">
-	<ul>
-		<li><a href="index.html">Home</a></li>
-		<li><a href="#" onclick="show()">About us</a>
-			<div ID="dropdown">
-				<ul>
-				<li onmouseover="boja(this)" onmouseout="stara(this)"><a href="about.html">Info</a></li>
-				<li onmouseover="boja(this)" onmouseout="stara(this)"><a href="">Location</a></li>
-				<li onmouseover="boja(this)" onmouseout="stara(this)"><a href="">Gallery</a></li>
-				</ul>
-			</div></li>
-		<li><a href="lineup.html">Lineup</a></li>
-		<li><a href="tickets.html">Tickets</a></li>
-		<li><a href="contact.html">Contact</a></li>
-	</ul>
-	</div>
-	<div class="logo">
-	</div>
-	<div class="logotext">
-	<h1>Music Festival</h1>
-	<h2> 7 - 10th July 2015 </h2> 
-	<h2> Sarajevo </h2>
-	</div>
-</div>
 
-<div class="wrapper">
 	<div class="title">
 	<h2>Contact us</h2>
 	</div>
@@ -41,32 +7,30 @@
 			<fieldset>
 				<legend accesskey=I></legend>
 				Name<br>
-				<input type="text" name="name" onchange="validirajIme(this.form)">
-				<div ID="error1">
-				<img src="../MFest/images/error.png" alt="slika"> Unesite ime i prezime
-				</div>
+				<input type="text" name="name" onblur="validirajIme(this.form)">
+				<div ID="error1"></div>
 				E-mail<br>
-				<input type="text" name="email" onchange="validirajMail(this.form)">
-				<div ID="error2">
-				<img src="../MFest/images/error.png" alt="slika"> E-mail nije u pravilnom formatu
-				</div>
-				Subject<br>
-				<input type="text" name="subject">
+				<input type="text" name="email" onblur="validirajMail(this.form)">
+				<div ID="error2"></div>
+				Location<br>
+				<input type="text" name="city" onblur="validirajGrad(this.form)">
+				<br>ZIP code<br>
+				<input type="text" name="zip" onblur="validirajZIP(this.form)">
+				<div ID="error3"></div>
 			</fieldset>
 			<fieldset>
 				<legend accesskey=O></legend>
-				Message<br>
+				Subject<br>
+				<input type="text" name="subject">
+				<br>
+				<br>Message<br>
 				<textarea name="message" rows=4 cols=20 onchange="validirajPoruku(this.form)"></textarea>
 				<br>
-				<input type="submit" value="Send!" onclick="validacija(this.form)">
+				<input type="submit" value="Send!" onclick="return validacija(this.form);">
 			</fieldset>
 		</form>
 	</div>
 	
 	<div ID="footer">
 	</div>
-</div>
 
-<script src="skripta.js"></script>		
-</BODY>
-</HTML>

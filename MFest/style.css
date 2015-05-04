@@ -92,7 +92,8 @@ textarea{
 	background: #E6E6E6;
 	color: #702A60;
 	border: 1px solid rgba(0,0,0,0.2);
-	margin: 1em;
+	padding: 1px;
+	margin-bottom: 1em;
 }
 
 #nav{
@@ -162,7 +163,7 @@ textarea{
 	color:  #E6E6E6;
 }
 
-.wrapper{
+#wrapper{
 	padding-top: 7em;
 }
 
@@ -279,9 +280,12 @@ img{
 
 #error1{
 	color: #E6E6E6;
-	visibility:hidden;
 }
+
 #error2{
 	color: #E6E6E6;
-	visibility:hidden;
+}
+
+#error3{
+	color: #E6E6E6;
 }
