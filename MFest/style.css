@@ -196,6 +196,16 @@ textarea{
 	width: 45%
 }
 
+.vijest{
+	width: 45%;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.vijest p{
+	text-align: left;
+}
+
 .title{
 	margin-bottom: 3em;
 }
@@ -245,7 +255,15 @@ img{
 	min-height: 100px;
 	overflow: hidden;
 	margin-left: auto;
-    margin-right: auto;
+  margin-right: auto;
+}
+
+.vecaSlika{
+	max-width: 600px;
+	min-height: 100px;
+	overflow: hidden;
+	margin-left: auto;
+  margin-right: auto;
 }
 
 .box{
