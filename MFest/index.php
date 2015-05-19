@@ -36,6 +36,9 @@
 	<?php include 'home.php';?>
 </div>
 
+<div ID='footer'>;
+</div>
+
 <script src="skripta.js"></script>	
 </BODY>
 </HTML>

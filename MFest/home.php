@@ -101,6 +101,4 @@ if($brojac % 2 != 0 && !$drugaVijest){
 		print "</div>";
 }
 
-print "<div ID='footer'>";
-print "</div>";
 ?>

@@ -8,7 +8,7 @@ body
 	margin: 0px;
 	padding: 0px;
 	font-family: 'Source Sans Pro', sans-serif;
-	font-size: 11pt;
+	font-size: 12pt;
 	font-weight: 300;
 	color: #E6E6E6;
 }
@@ -100,11 +100,13 @@ textarea{
 	text-align: center;
 	background : rgba(0,0,0,0.6);
 	height: 100px;
+	overflow: hidden;
 }
 
 #nav ul{
 	position:relative;
 	top: 1.5em;
+	margin: 0px;
 }
 
 #nav li{
@@ -125,6 +127,7 @@ textarea{
 #nav #dropdown{
 	text-align: center;
 	visibility: hidden;
+	margin-top: -0.2em;
 }
 
 #nav #dropdown ul{
@@ -165,6 +168,8 @@ textarea{
 
 #wrapper{
 	padding-top: 7em;
+	margin-left: 4em;
+	margin-right: 4em;
 }
 
 .container{
