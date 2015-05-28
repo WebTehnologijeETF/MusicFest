@@ -10,15 +10,9 @@ function boja(item){
 function stara(item){
 	item.style.background = "rgba(0,0,0,0)";
 }
-var ime = /^[a-zA-Z]+ [a-zA-Z]+$/;
 
 function validirajIme(form){
-	if(form.name.value.length == null || form.name.value.length == "" ) {
-		document.getElementById("error1").innerHTML = '<img src="../MFest/images/error.png" alt="slika"> Unesite ime i prezime';
-		return false;
-	}
-	else if(!form.name.value.match(ime)){
-
+	if(form.name.value.length == null || form.name.value.length == "" || form.name.value.replace(/\s+/, "").length == "" ) {
 		document.getElementById("error1").innerHTML = '<img src="../MFest/images/error.png" alt="slika"> Unesite ime i prezime';
 		return false;
 	}
@@ -30,7 +24,7 @@ function validirajIme(form){
 var mail = /^[^@]+@[^@.]+\.[^@]*\w\w$/;
 
 function validirajMail(form){
-	if(form.email.value.length == null || form.email.value.length == "" ) {
+	if(form.email.value.length == null || form.email.value.length == "" || form.email.value.replace(/\s+/, "").length == "" ) {
 
 		document.getElementById("error2").innerHTML = '<img src="../MFest/images/error.png" alt="slika"> E-mail nije u pravilnom formatu';
 		return false;
@@ -44,8 +38,23 @@ function validirajMail(form){
 	return true;	
 }
 
+function validirajMailKomentar(form){
+	if(form.email.value.length == null || form.email.value.length == "" ) {
+
+		document.getElementById("error2").innerHTML = '';
+		return true;
+	}
+	else if(!form.email.value.match(mail)) {
+		document.getElementById("error2").innerHTML = '<img src="../MFest/images/error.png" alt="slika"> E-mail nije u pravilnom formatu';
+		return false;
+	}
+	
+	document.getElementById("error2").innerHTML = '';
+	return true;	
+}
+
 function validirajPoruku(form){
-	if(form.message.value.length == null || form.message.value.length == "" ) return false;
+	if(form.message.value.length == null || form.message.value.length == "" || form.message.value.replace(/\s+/, "").length == "") return false;
 	
 	return true;
 }
@@ -105,6 +114,17 @@ function validacija(form){
 	if(!validirajIme(form) || !validirajMail(form) || !validirajPoruku(form)){
 
 		alert("Forma nije pravilno ispunjena");
+		return false;
+		
+	}
+
+	return true;
+}
+
+function validacijaKomentara(form){
+	if(!validirajIme(form) || !validirajMailKomentar(form) || !validirajPoruku(form)){
+
+		alert("Unesite ime i komentar");
 		return false;
 		
 	}

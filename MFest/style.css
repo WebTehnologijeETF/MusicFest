@@ -32,6 +32,7 @@ a{
 	text-decoration: none;
 	font-family: 'Patrick Hand SC', sans-serif;
 	color: #BF7047;
+	transition: all 0.35s ease 0s;
 }
 
 table{
@@ -116,7 +117,7 @@ textarea{
 
 #nav a {
 	font-size: 40px;
-	transition: all 0.35s ease 0s;
+	
 }
 
 #nav a:hover{
@@ -208,6 +209,46 @@ textarea{
 
 .vijest p{
 	text-align: left;
+}
+
+.blok{
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	font-family: 'Patrick Hand SC', sans-serif;
+	font-weight: bold;
+	padding: 0.5em;
+	text-align: left;
+}
+
+.blok .datum{
+	float:right;
+
+}
+
+.blok p{
+	font-weight: 300;
+}
+
+.komentar{
+	text-align: right;
+	font-weight: bold;
+	margin-top: 5%;
+	margin-right: 5%;
+	font-size: 15pt;
+	font-family: 'Patrick Hand SC', sans-serif;
+	color: #BF7047;
+}
+
+.komentar a{
+	
+}
+
+.komentar a:hover{
+	color: #A44952;
+}
+
+.komentar h4{
+	margin-top: 0%;
+	margin-bottom: 0%;	
 }
 
 .title{
