@@ -47,19 +47,7 @@
 
             print "</div>";
         print "</div>";
-
-        $rezultat2 = $veza->query("select tekst, autor, vrijeme from komentar WHERE vijest=" . $id );
-          
-
-        if (!$rezultat2) {
-        $greska = $veza->errorInfo();
-        print "SQL greška: " . $greska[2];
-        exit();
-        }
-
-    //    foreach($rezultat2 as $komentar){
-    //       print $komentar['tekst'];
-    //    }
+        
     }
 
 ?>

@@ -22,10 +22,11 @@ $dsn = 'mysql:dbname=wt8;host=127.0.0.1';
           $mail = htmlEntities($_POST['email'], ENT_QUOTES);
           $kom = htmlEntities($_POST['message'], ENT_QUOTES);
 
-          $upit = $veza->prepare("insert INTO komentar SET vijest=?, tekst=?, autor=?");
+          $upit = $veza->prepare("insert INTO komentar SET vijest=?, tekst=?, autor=?, mail=?");
           $upit->bindValue(1, $vijestID, PDO::PARAM_INT);
           $upit->bindValue(2, $kom, PDO::PARAM_STR);
           $upit->bindValue(3, $ime, PDO::PARAM_STR);
+          $upit->bindValue(4, $mail, PDO::PARAM_STR);
           $upit->execute();
 
           if (!$upit) {

@@ -16,7 +16,7 @@
      
      $veza->exec("set names utf8");
 
-     $upit = $veza->prepare("select tekst, autor, UNIX_TIMESTAMP(vrijeme) vrijeme2 from komentar WHERE vijest=? order by vrijeme desc");
+     $upit = $veza->prepare("select tekst, autor, UNIX_TIMESTAMP(vrijeme) vrijeme2, mail from komentar WHERE vijest=? order by vrijeme desc");
      $upit->bindValue(1, $id, PDO::PARAM_INT);
      $upit->execute();
 
@@ -57,7 +57,14 @@
                 foreach ($upit as $komentar) {
 
                 print "<div class='blok'>";
-                    print "By: " . $komentar['autor'];
+                    if($komentar['mail'] != ""){
+                        print "By: <a href= mailto:" . $komentar['mail'] .  ">" . $komentar['autor'] . "</a>"; 
+
+                    }
+                    else{
+                        print "By: " . $komentar['autor'];    
+                    }
+                    
                     print "<div class='datum'> Posted: " . date("d.m.Y. (h:i)", $komentar['vrijeme2']) . "</div>";
                     print "<p>" . $komentar['tekst'] . "</p>";
                 print "</div><br>";
