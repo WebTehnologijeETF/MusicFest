@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: May 28, 2015 at 11:52 PM
+-- Generation Time: May 29, 2015 at 01:31 AM
 -- Server version: 5.1.73-community
 -- PHP Version: 5.5.12
 
@@ -32,18 +32,21 @@ CREATE TABLE IF NOT EXISTS `komentar` (
   `tekst` text COLLATE utf8_slovenian_ci NOT NULL,
   `autor` varchar(20) COLLATE utf8_slovenian_ci NOT NULL,
   `vrijeme` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `mail` varchar(50) CHARACTER SET ucs2 COLLATE ucs2_slovenian_ci NOT NULL,
   PRIMARY KEY (`id`),
   KEY `vijest` (`vijest`)
-) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_slovenian_ci AUTO_INCREMENT=8 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_slovenian_ci AUTO_INCREMENT=14 ;
 
 --
 -- Dumping data for table `komentar`
 --
 
-INSERT INTO `komentar` (`id`, `vijest`, `tekst`, `autor`, `vrijeme`) VALUES
-(1, 1, 'Komentar neki', 'N.N.', '2015-05-28 16:01:47'),
-(6, 1, 'fdsfsd', 'fdfdsfds', '2015-05-28 21:41:44'),
-(7, 1, 'dsfdsdf', 'fdss', '2015-05-28 21:42:55');
+INSERT INTO `komentar` (`id`, `vijest`, `tekst`, `autor`, `vrijeme`, `mail`) VALUES
+(1, 1, 'Komentar neki', 'N.N.', '2015-05-28 16:01:47', ''),
+(6, 1, 'Jungle avantura!!', 'Belma', '2015-05-28 23:27:26', ''),
+(10, 4, 'a', 'azra m', '2015-05-28 22:43:19', ''),
+(12, 4, 'Moj komentar', 'Darko', '2015-05-28 23:19:18', 'darko@gmail.com'),
+(13, 3, 'Odlicno!', 'Mirza', '2015-05-28 23:24:07', 'mirza12@hotmail.com');
 
 -- --------------------------------------------------------
 
